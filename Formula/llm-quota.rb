@@ -10,7 +10,7 @@ class LlmQuota < Formula
   end
 
   test do
-    output = shell_output("#{bin}/llm-quota --definitely-unknown", 2)
+    output = shell_output("#{bin}/llm-quota --definitely-unknown 2>&1", 2)
     assert_match "llm-quota: unknown argument: --definitely-unknown", output
   end
 end

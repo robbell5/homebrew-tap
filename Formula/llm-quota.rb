@@ -5,20 +5,20 @@
 class LlmQuota < Formula
   desc "Terminal UI for local Claude Code and Codex quota windows"
   homepage "https://github.com/robbell5/llm-quota"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/robbell5/llm-quota/releases/download/v0.1.0/llm-quota_0.1.0_darwin_amd64.tar.gz"
-      sha256 "5bd63aac276bc13864f712192a8de0e0cdba509cac7edc8fea2587d77e5f2926"
+      url "https://github.com/robbell5/llm-quota/releases/download/v0.2.0/llm-quota_0.2.0_darwin_amd64.tar.gz"
+      sha256 "3092eeeebcdc247af24f2c7d227a39e2d6a5b1a8804ab37ac979bfa0a278b57d"
 
       define_method(:install) do
         bin.install "llm-quota"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/robbell5/llm-quota/releases/download/v0.1.0/llm-quota_0.1.0_darwin_arm64.tar.gz"
-      sha256 "79df9b2b61f6eeba46f56d2a68ee7b029307fd2f123cf724eab9c93377d5c939"
+      url "https://github.com/robbell5/llm-quota/releases/download/v0.2.0/llm-quota_0.2.0_darwin_arm64.tar.gz"
+      sha256 "0e82b523951daf2c14d0cda85f20594f2c0f62bd9526db05393daa38791ad2b4"
 
       define_method(:install) do
         bin.install "llm-quota"
@@ -28,15 +28,15 @@ class LlmQuota < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/robbell5/llm-quota/releases/download/v0.1.0/llm-quota_0.1.0_linux_amd64.tar.gz"
-      sha256 "172bd5ccbaedecb81e0799a68149cf61874e301ee854800f26b9d6133d1ebeef"
+      url "https://github.com/robbell5/llm-quota/releases/download/v0.2.0/llm-quota_0.2.0_linux_amd64.tar.gz"
+      sha256 "3ce957cfeb4b548eaaff5539d9bb2fb524b5fbad72c67024b0ecc359719a08d2"
       define_method(:install) do
         bin.install "llm-quota"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/robbell5/llm-quota/releases/download/v0.1.0/llm-quota_0.1.0_linux_arm64.tar.gz"
-      sha256 "18f11e74bef1f52eb8cd8cd484f2851ee9051399f2993d2cdeea99c23f475f0d"
+      url "https://github.com/robbell5/llm-quota/releases/download/v0.2.0/llm-quota_0.2.0_linux_arm64.tar.gz"
+      sha256 "968550201c6fcaaf5bda113b37a1ab81727642937ac99c58db37ffd914b7cba6"
       define_method(:install) do
         bin.install "llm-quota"
       end
